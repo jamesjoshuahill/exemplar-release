@@ -1,0 +1,9 @@
+---
+templates:
+  backup: bin/bbr/backup
+  restore: bin/bbr/restore
+
+packages: []
+
+properties: {}
+name: backup-and-restore-10
