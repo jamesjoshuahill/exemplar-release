@@ -1,0 +1,130 @@
+name: exemplar-bbr
+
+releases:
+- name: exemplar
+  version: latest
+
+stemcells:
+- alias: trusty
+  os: ubuntu-trusty
+  version: latest
+
+instance_groups:
+- name: backup-node
+  azs:
+  - z1
+  instances: 1
+  jobs:
+  - name: backup-and-restore-1
+    release: exemplar
+  - name: backup-and-restore-2
+    release: exemplar
+  - name: backup-and-restore-3
+    release: exemplar
+  - name: backup-and-restore-4
+    release: exemplar
+  - name: backup-and-restore-5
+    release: exemplar
+  - name: backup-and-restore-6
+    release: exemplar
+  - name: backup-and-restore-7
+    release: exemplar
+  - name: backup-and-restore-8
+    release: exemplar
+  - name: backup-and-restore-9
+    release: exemplar
+  - name: backup-and-restore-10
+    release: exemplar
+  - name: backup-and-restore-11
+    release: exemplar
+  - name: backup-and-restore-12
+    release: exemplar
+  - name: backup-and-restore-13
+    release: exemplar
+  - name: backup-and-restore-14
+    release: exemplar
+  - name: backup-and-restore-15
+    release: exemplar
+  - name: backup-and-restore-16
+    release: exemplar
+  - name: backup-and-restore-17
+    release: exemplar
+  - name: backup-and-restore-18
+    release: exemplar
+  - name: backup-and-restore-19
+    release: exemplar
+  - name: backup-and-restore-20
+    release: exemplar
+  - name: backup-and-restore-21
+    release: exemplar
+  - name: backup-and-restore-22
+    release: exemplar
+  - name: backup-and-restore-23
+    release: exemplar
+  - name: backup-and-restore-24
+    release: exemplar
+  - name: backup-and-restore-25
+    release: exemplar
+  - name: backup-and-restore-26
+    release: exemplar
+  - name: backup-and-restore-27
+    release: exemplar
+  - name: backup-and-restore-28
+    release: exemplar
+  - name: backup-and-restore-29
+    release: exemplar
+  - name: backup-and-restore-30
+    release: exemplar
+  - name: backup-and-restore-31
+    release: exemplar
+  - name: backup-and-restore-32
+    release: exemplar
+  - name: backup-and-restore-33
+    release: exemplar
+  - name: backup-and-restore-34
+    release: exemplar
+  - name: backup-and-restore-35
+    release: exemplar
+  - name: backup-and-restore-36
+    release: exemplar
+  - name: backup-and-restore-37
+    release: exemplar
+  - name: backup-and-restore-38
+    release: exemplar
+  - name: backup-and-restore-39
+    release: exemplar
+  - name: backup-and-restore-40
+    release: exemplar
+  - name: backup-and-restore-41
+    release: exemplar
+  - name: backup-and-restore-42
+    release: exemplar
+  - name: backup-and-restore-43
+    release: exemplar
+  - name: backup-and-restore-44
+    release: exemplar
+  - name: backup-and-restore-45
+    release: exemplar
+  - name: backup-and-restore-46
+    release: exemplar
+  - name: backup-and-restore-47
+    release: exemplar
+  - name: backup-and-restore-48
+    release: exemplar
+  - name: backup-and-restore-49
+    release: exemplar
+  - name: backup-and-restore-50
+    release: exemplar
+  networks:
+  - name: default
+    default:
+    - dns
+    - gateway
+  stemcell: trusty
+  vm_type: medium
+
+update:
+  canaries: 1
+  canary_watch_time: 2000
+  max_in_flight: 1
+  update_watch_time: 2000
